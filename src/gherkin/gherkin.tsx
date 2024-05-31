@@ -31,8 +31,8 @@ const Gherkin = () => {
 
     // The WIF field. Note: NOT the same thing as the Input Field Name
     // Todo: initially create this!
-    const gherkin: any = await workItemFormService.getFieldValue("PicklesField", { returnOriginalValue: true }); 
-
+    const gherkin: any = await workItemFormService.getFieldValue("Custom.PicklesField", { returnOriginalValue: true });
+   console.log("setting gherkin:", gherkin);
     setGherkin(decode(gherkin));
   }
 
@@ -164,7 +164,7 @@ const Gherkin = () => {
             range: range
           },
           {
-            label: "Datatable", 
+            label: "Datatable",
             kind: monacoEditor.languages.CompletionItemKind.Snippet,
             insertText: "Examples:\n    | column | column |\n    |    x   |    x   |\n    |    x   |    x   |",
             range: range
@@ -191,18 +191,18 @@ const Gherkin = () => {
   if(loading) return null;
 
   return (
-    <React.Fragment> 
+    <React.Fragment>
       <MonacoEditor
         height="600"
         theme="gherkin-theme"
-        options={{ selectOnLineNumbers: true }}     
+        options={{ selectOnLineNumbers: true }}
         language="gherkin"
         editorWillMount={onEditorWillMount}
         editorDidMount={onEditorDidMount}
         onChange={onEditorChange}
         value={gherkin}
       />
-    </React.Fragment> 
+    </React.Fragment>
   );
 };
 
