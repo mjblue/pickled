@@ -183,7 +183,7 @@ const Gherkin = () => {
       WorkItemTrackingServiceIds.WorkItemFormService
     );
 
-    var fieldName = SDK.getConfiguration().witInputs["PicklesInput"];
+    var fieldName = SDK.getConfiguration().witInputs["PickledInput"];
 
     await workItemFormService.setFieldValue(fieldName, encode(value));
   }
