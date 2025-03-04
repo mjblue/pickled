@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
   "version": "0.2.4",
-  "name": "picklesblue",
-  "description": "A simple gherkin editor for the work item form",
+  "name": "pickled",
+  "description": "A simple gherkin editor for the work item form, based on heymega.pickles",
   "publisher": "mjblue",
   "demands": [
     "api-version/3.0"
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "uri": "https://github.com/mjblue/pickles"
+    "uri": "https://github.com/mjblue/pickled"
   },
   "content": {
     "details": {
@@ -35,7 +35,7 @@
     }
   },
   "icons": {
-    "default": "img/pickles-logo.png"
+    "default": "img/pickled-logo.png"
   },
   "files": [
     {
@@ -56,12 +56,12 @@
         "ms.vss-work-web.work-item-form"
       ],
       "properties": {
-        "name": "Pickles",
+        "name": "Pickled",
         "uri": "dist/gherkin/gherkin.html",
         "height": 600,
         "inputs": [
           {
-            "id": "PicklesInput",
+            "id": "PickledInput",
             "name": "Field carrying a gherkin",
             "description": "Reference name of a string field to be updated.",
             "type": "WorkItemField",
