@@ -1,7 +1,7 @@
 
 
 
-![pickles logo](/img/pickled-banner.png)
+![pickled logo](/img/pickled-banner.png)
 
 ## Description
 
